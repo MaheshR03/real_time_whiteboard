@@ -1,0 +1,5 @@
+# Node.js project dependencies (for reference)
+# This file is informational; use package.json for actual dependency management.
+
+express==4.19.2
+socket.io==4.7.5
