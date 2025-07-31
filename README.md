@@ -8,7 +8,7 @@ A collaborative whiteboard application for real-time drawing and brainstorming. 
 
 ## 🚀 Live Demo
 
-[![Deploy on Vercel](https://vercel.com/button)](https://real-time-whiteboard-socketio.vercel.app/)
+[![Vercel](https://img.shields.io/badge/Vercel-Live%20Demo-black?logo=vercel&style=for-the-badge)](https://real-time-whiteboard-socketio.vercel.app/)
 
 ---
 
