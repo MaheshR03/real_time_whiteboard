@@ -8,7 +8,7 @@ A collaborative whiteboard application for real-time drawing and brainstorming. 
 
 ## 🚀 Live Demo
 
-<a href="https://real-time-whiteboard-socketio.vercel.app/" target="_blank" style="display:inline-block;padding:10px 20px;background:#000;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;box-shadow:0 2px 6px rgba(0,0,0,0.15);">View on Vercel 🔺</a>
+[![Deploy on Vercel](https://vercel.com/button)](https://real-time-whiteboard-socketio.vercel.app/)
 
 ---
 
@@ -69,7 +69,7 @@ real_time_whiteboard/
    ```powershell
    npm start
    ```
-4. **Open your browser** and go to `http://localhost:9090
+4. **Open your browser** and go to `http://localhost:9090`
 
 ---
 
