@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Real Time Whiteboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align content vertically */
+            justify-content: center; /* Center align content horizontally */
+            min-height: 100vh;
+            background-color: #f1f1f1;
+        }
+        canvas {
+            border: 2px solid #000;
+            max-width: 100%; /* Ensure canvas does not exceed viewport width */
+            max-height: calc(100vh - 140px); /* Adjust canvas height */
+        }
+        #eraserButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .color-picker {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .color-option {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+            display: inline-block;
+        }
+        .color-option.hovered {
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <button id="eraserButton">Eraser</button>
+    <div class="color-picker">
+        <div class="color-option" style="background-color: #000;"></div>
+        <div class="color-option" style="background-color: #ff0000;"></div>
+        <div class="color-option" style="background-color: #00ff00;"></div>
+        <div class="color-option" style="background-color: #0000ff;"></div>
+        <div class="color-option" style="background-color: #ffff00;"></div>
+        <div class="color-option" style="background-color: #ff00ff;"></div>
+        <div class="color-option" style="background-color: #00ffff;"></div>
+        <div class="color-option" style="background-color: #800080;"></div>
+        <div class="color-option" style="background-color: #ffa500;"></div>
+        <div class="color-option" style="background-color: #008000;"></div>
+    </div>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
